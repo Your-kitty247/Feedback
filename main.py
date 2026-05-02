@@ -62,7 +62,7 @@ async def feedback(interaction: discord.Interaction):
                 description=data["message"],
                 color=discord.Color.blue()
             )
-            embed.set_footer(text=f"Given by {data['by']}")
+            embed.set_footer(text=f"Thank you so much for applying!")
 
             await interaction.user.send(embed=embed)
             await interaction.response.send_message("📩 Check your DMs!", ephemeral=True)
